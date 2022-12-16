@@ -11,6 +11,7 @@ size_t binary_tree_size(const binary_tree_t *tree)
 	if (tree)
 	{
 		size_t sum = 1;
+
 		tree->left ? sum += binary_tree_size(tree->left) : 0;
 		tree->right ? sum += binary_tree_size(tree->right) : 0;
 
